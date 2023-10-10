@@ -8,9 +8,13 @@
   "name": "deploy",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/express": "^4.17.18"
+  },
   "scripts": {
-    "dev": "tsnd --clear ./src/index.ts"
+    "dev": "tsnd --clear ./src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
